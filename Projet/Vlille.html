@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+    <head>
+        <title>Projet V'Lille</title>
+        <meta charset='UTF-8' />
+        <link rel='stylesheet' href='projet.css' />
+        <link rel='stylesheet' href='https://unpkg.com/leaflet@1.0.3/dist/leaflet.css' />
+		<script src='https://unpkg.com/leaflet@1.0.3/dist/leaflet.js'></script>
+		<script src='scriptCarteVLille.js'></script>
+    </head>
+
+    <body>
+    
+    
+    <header>
+        <p id='entete'>
+            <a href='test.php'>Accueil</a>   <a href='formFilter.php'>Filtre</a>
+        </p>
+    </header>
+    <nav id='tableauVLille'>		<table id=tableJSON>
+					<thead>
+						<tr>
+							<th>NameStation</th>
+							<th>Commune</th>
+							<th>Vélo disponibles</th>
+							<th>Place disponibles</th>
+						</tr>
+
+					<tbody>
+						<tr  data-lat='50.63589' data-lon='3.062471' data-nameStation="Rihour" data-etat='EN SERVICE' data-connexion='CONNECTEE' data-commune="LILLE" data-adresse="ANGLE PLACE RIHOUR RUE JEAN ROISIN" data-typeCB='AVEC TPE' data-velodispo='21' data-espace='11' data-libelle='10' >
+							<td>Rihour</td>
+							<td>LILLE</td>
+							<td>21</td>
+							<td>11</td>
+						</tr>
+
+
+</tbody>
+
+			</table>
+
+	</nav>
+	
+	<section id= 'GrandeCarte'>
+		    <div id='carteVLille'></div>
+	
+	<section id='infoComplete'>
+	<div id='miniCarte'></div>
+	
+    
+		<p id='Informations'></p>
+	</section>
+	</section>
+	
+	</div>
+
+    </body>
+</html>
